@@ -1,0 +1,352 @@
+
+/* header part styling */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+}
+nav li{
+    list-style: none;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.sub-heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
+
+
+/* banner part style */
+.banner{
+    text-align: center;
+}
+.main-heading{
+    font-weight: 700;
+    font-size: 35px;
+}
+.banner-descipt{
+    color: #727272;;
+}
+.head-button{
+    background-color:  #FF900E;
+    color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 20px 24px;
+}
+.banner-image{
+width: 70%;
+margin-top: 50px;
+    
+}
+
+
+
+/* working part styling */
+
+.team{
+    width: 220px;
+    height: 220px;
+}
+
+.container-images{
+    display: grid;
+    grid-template-columns: repeat(2,240px);
+}
+.working{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin: 50px 150px;
+
+}
+.work-head{
+    font-weight: 500;
+    font-size: 35px;
+}
+.future{
+    color:#FF900E ;
+}
+.quick-list{
+    color: #727272;
+}
+
+
+
+
+
+
+
+/* artical and girl part */
+
+.skills-container{
+    margin: 100px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.step-2{
+    position: relative;
+}
+
+.step-2-heading{
+    font-weight: 700;
+    font-size: 25px;
+    border-left: 4px solid #FF900E;
+    padding-left: 7px;
+}
+.step-2-descript{
+    color: #727272;
+}
+
+.artical-p{
+    color: #727272;
+}
+
+
+article{
+    background-color: #FFFFFF;;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+.a-girl{
+    border-radius: 20px;
+}
+.big-button{
+    width: 200px;
+    height: 100px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: #FFF4E7;
+    font-weight: 700;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+
+
+
+
+
+
+
+
+.notice{
+    margin-left: 150px;
+}
+.hotice-heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+/* icons part */
+
+.icon-container{
+    margin: 50px 100px; 
+    display: flex;  
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.icon-box{
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    line-height:.2em;
+    transition: width 2s, height 2s, transform 1s;
+}
+.icon-box:hover{
+width:200px;
+height: 200px;
+transform: rotate(-360deg);
+background-color:orange ;
+color: #FFF4E7;
+}
+.filled{
+    width: 25%;
+}
+
+.icon-n{
+    font-weight: 700;
+    font-size: 25px;
+}
+.icon-p{
+    color: #727272;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+.our-sponsors{
+    margin-top: 100px auto;
+    text-align: center;
+}
+.sp-heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+.sp-descript{
+    color: #727272;;
+}
+
+
+
+
+
+.sponsor-images{
+    margin:30px auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.spon-images{
+    width: 60%;
+    
+}
+
+
+
+
+
+
+
+/*  contaract styling */
+.contract{
+    text-align: center;
+    margin: 100px auto;
+}
+input{
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #FF900E;
+    color: #FFF4E7;
+    border-radius: 5px;
+    border: none;
+}
+input:hover{
+    background-color: #FFF4E7;
+    color: darkcyan;
+}
+
+
+
+
+
+
+
+
+
+/* footer styling */
+
+footer{
+    height: 100px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: #FFF4E7;;
+    margin: 120px auto;
+}
+.box{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+/* media queri */
+@media screen and (max-width:576px) {
+    nav ul{
+        flex-direction: column;
+        
+    }
+    nav{
+        flex-direction: column;
+    }
+    header{
+        width: auto;
+    }
+    
+    
+
+
+
+
+    .working{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .container-images{
+        grid-template-columns: repeat(1,auto);
+    }
+
+
+
+
+
+
+
+    .skills-container{
+        flex-direction: column;
+    }
+    .a-girl{
+        width: min-content;
+    }
+
+    .notice{
+        text-align: c;
+    }
+
+
+    .icon-container{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+
+
+    
+
