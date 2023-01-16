@@ -1,7 +1,24 @@
+body{
+    max-width:90%;
+    margin: 0 auto;
+}
 
-/* header part styling */
+.supper-container{
+    /* max-width: 80%; */
+    /* margin: auto; */
+}
+
+
+
+
+
+
+                    /* header part styling */
+
+
 header{
     background-color: rgba(255, 144, 14, 0.1);
+    max-width: 100%;
     
     
 }
@@ -32,7 +49,8 @@ nav ul{
 
 
 
-/* banner part style */
+                    /* banner part style */
+
 .banner{
     text-align: center;
 }
@@ -59,7 +77,8 @@ margin-top: 50px;
 
 
 
-/* working part styling */
+                    /* working part styling */
+
 
 .team{
     width: 220px;
@@ -70,11 +89,16 @@ margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2,240px);
 }
+
 .working{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-margin: 50px 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin: 100px auto;
+/* display: flex; */
+/* justify-content: space-evenly; */
+/* align-items: center; */
+/* margin: 50px 150px; */
 
 }
 .work-head{
@@ -94,16 +118,33 @@ margin: 50px 150px;
 
 
 
-/* artical and girl part */
+                    /* artical and girl part */
+
 
 .skills-container{
-    margin: 100px 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.step-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:90px ;
+    margin:100px auto;
     position: relative;
+    /* margin: 100px 100px; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+.big-button{
+    width: 200px;
+    height: 100px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: #FFF4E7; 
+    font-weight: 700;
+    font-size: 25px;
+    position: absolute;
+    right:300px;
+    bottom:100px;
 }
 
 .step-2-heading{
@@ -120,7 +161,6 @@ margin: 50px 150px;
     color: #727272;
 }
 
-
 article{
     background-color: #FFFFFF;;
     border-radius: 10px;
@@ -131,21 +171,6 @@ article{
 .a-girl{
     border-radius: 20px;
 }
-.big-button{
-    width: 200px;
-    height: 100px;
-    background-color: #FF900E;
-    border: none;
-    border-radius: 8px;
-    color: #FFF4E7;
-    font-weight: 700;
-    font-size: 25px;
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-}
-
-
 
 
 
@@ -153,7 +178,7 @@ article{
 
 
 .notice{
-    margin-left: 150px;
+    margin-left:100px;
 }
 .hotice-heading{
     font-weight: 700;
@@ -168,13 +193,17 @@ article{
 
 
 
-/* icons part */
+                        /* icons part */
+
 
 .icon-container{
-    margin: 50px 100px; 
-    display: flex;  
-    justify-content: space-around; 
-    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 100px auto;
+    /* margin: 50px 100px;  */
+    /* display: flex;   */
+    /* justify-content: space-around;  */
+    /* align-items: center;  */
 }
 
 .icon-box{
@@ -230,15 +259,21 @@ color: #FFF4E7;
 
 
 
+
 .sponsor-images{
-    margin:30px auto;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 30px auto;
+     /* margin:30px auto;  */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
 }
 .spon-images{
-    width: 60%;
+    width: 60%; 
+    
+   
+    
     
 }
 
@@ -248,7 +283,8 @@ color: #FFF4E7;
 
 
 
-/*  contaract styling */
+                    /*  contaract styling */
+
 .contract{
     text-align: center;
     margin: 100px auto;
@@ -276,7 +312,8 @@ input:hover{
 
 
 
-/* footer styling */
+                /* footer styling */
+
 
 footer{
     height: 100px;
@@ -293,7 +330,14 @@ footer{
 
 
 
-/* media queri */
+
+
+
+
+                 /* media queri for mobile phone */
+
+
+
 @media screen and (max-width:576px) {
     nav ul{
         flex-direction: column;
@@ -303,17 +347,17 @@ footer{
         flex-direction: column;
     }
     header{
-        width: auto;
+        width:auto;
     }
     
     
 
 
-
-
     .working{
-        flex-direction: column;
-        flex-direction: column-reverse;
+        grid-template-columns: repeat(1,1fr);
+        
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
     }
     .container-images{
         grid-template-columns: repeat(1,auto);
@@ -322,23 +366,25 @@ footer{
 
 
 
-
-
-
     .skills-container{
-        flex-direction: column;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(1,1fr);
     }
     .a-girl{
         width: min-content;
     }
 
     .notice{
-        text-align: c;
+        margin-left:auto;
     }
 
 
     .icon-container{
-        flex-direction: column;
+        grid-template-columns: repeat(1, auto);
+        /* flex-direction: column; */
+    }
+    .spon-images{
+        margin-left: 5px;
     }
     
 }
